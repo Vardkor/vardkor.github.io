@@ -1,30 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Theo Arnaud-Manchado — Technical Artist</title>
+<meta name="description" content="Portfolio de Theo Arnaud-Manchado, Technical Artist : simulation, procédural, shaders.">
+<meta property="og:title" content="Theo Arnaud-Manchado — Technical Artist">
+<meta property="og:description" content="Portfolio de Theo Arnaud-Manchado, Technical Artist : simulation, procédural, shaders.">
+<meta name="theme-color" content="#14271C">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400;62..125,500;62..125,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+<a href="index.html#intro" class="logo cond">Theo Arnaud-Manchado</a>
+<nav aria-label="Navigation principale">
+<a href="index.html#portfolio">Portfolio</a>
+<a href="index.html#experience">Expérience</a>
+<a href="index.html#about">À propos</a>
+<a href="index.html#contact">Contact</a>
+</nav>
+</header>
+<main>
+<section id="intro" class="hero on-ink">
+<!-- Showreel : mets ta vidéo dans videos/reel.mp4 et remplace la div .ph par :
+<video class="hero-bg" src="videos/reel.mp4" autoplay muted loop playsinline poster="img/reel-poster.jpg"></video> -->
+<div class="hero-bg ph" style="opacity:.35">[Showreel en lecture auto, muet, en boucle]</div>
+<h1 class="cond">Theo<br>Arnaud-Manchado</h1>
+<div class="hero-bar">
+<p>Technical Artist · Simulation · Procédural · Shaders</p>
+<!-- Lien vers le reel complet avec le son (YouTube / Vimeo) -->
+<a class="btn fill" href="https://vimeo.com" target="_blank" rel="noopener">▶ Voir le reel avec le son</a>
+</div>
+</section>
 
-<htlm>  
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="with=device-whidth, initial-scale =1.0">
-        <title>Théo Arnaud--Manchado | Technical Artist & Game Developper</title>
+<section id="portfolio" class="section" style="border-top:0">
+<div class="portfolio-head">
+<h2 class="h2 cond">Portfolio</h2>
+<div class="filters" role="group" aria-label="Filtrer les projets">
+<button class="pill" type="button" data-filter="tout" aria-pressed="true">Tout</button>
+<button class="pill" type="button" data-filter="perso" aria-pressed="false">Perso</button>
+<button class="pill" type="button" data-filter="ecole" aria-pressed="false">École</button>
+<button class="pill" type="button" data-filter="outils" aria-pressed="false">Outils</button>
+</div>
+</div>
+<div class="grid">
+<a class="card" href="projets/vent-procedural.html" data-tags="perso">
+<div class="thumb"><!-- Remplace par : <img src="img/vent-procedural.jpg" alt="Vent procédural" loading="lazy"> --><div class="ph">[Visuel]</div><span class="tag">Perso</span></div>
+<span class="title cond">Vent procédural</span>
+<span class="sub">Shader UE5</span>
+</a>
+<a class="card" href="projets/tropical-cove.html" data-tags="perso">
+<div class="thumb"><!-- Remplace par : <img src="img/tropical-cove.jpg" alt="Tropical Cove" loading="lazy"> --><div class="ph">[Visuel]</div><span class="tag">Perso</span></div>
+<span class="title cond">Tropical Cove</span>
+<span class="sub">Houdini → UE5</span>
+</a>
+<a class="card" href="projets/generateur-lianes.html" data-tags="perso outils">
+<div class="thumb"><!-- Remplace par : <img src="img/generateur-lianes.jpg" alt="Générateur de lianes" loading="lazy"> --><div class="ph">[Visuel]</div><span class="tag">Outil</span></div>
+<span class="title cond">Générateur de lianes</span>
+<span class="sub">Outil UE5 · GeometryScript</span>
+</a>
+<a class="card" href="projets/vision-thermique.html" data-tags="perso">
+<div class="thumb"><!-- Remplace par : <img src="img/vision-thermique.jpg" alt="Vision thermique" loading="lazy"> --><div class="ph">[Visuel]</div><span class="tag">Perso</span></div>
+<span class="title cond">Vision thermique</span>
+<span class="sub">Post-process UE5</span>
+</a>
+<a class="card" href="projets/eau-temps-reel.html" data-tags="perso">
+<div class="thumb"><!-- Remplace par : <img src="img/eau-temps-reel.jpg" alt="Eau temps réel" loading="lazy"> --><div class="ph">[Visuel]</div><span class="tag">Perso</span></div>
+<span class="title cond">Eau temps réel</span>
+<span class="sub">Niagara Fluids</span>
+</a>
+<a class="card" href="projets/fluide-2d.html" data-tags="perso">
+<div class="thumb"><!-- Remplace par : <img src="img/fluide-2d.jpg" alt="Fluide 2D temps réel" loading="lazy"> --><div class="ph">[Visuel]</div><span class="tag">Perso</span></div>
+<span class="title cond">Fluide 2D temps réel</span>
+<span class="sub">Render Targets UE5</span>
+</a>
+<a class="card" href="projets/scatter-tool.html" data-tags="perso outils">
+<div class="thumb"><!-- Remplace par : <img src="img/scatter-tool.jpg" alt="Scatter Tool" loading="lazy"> --><div class="ph">[Visuel]</div><span class="tag">Outil</span></div>
+<span class="title cond">Scatter Tool</span>
+<span class="sub">Outil UE5 · Blueprint</span>
+</a>
+<a class="card" href="projets/roguelike-procedural.html" data-tags="ecole">
+<div class="thumb"><!-- Remplace par : <img src="img/roguelike-procedural.jpg" alt="Roguelike procédural" loading="lazy"> --><div class="ph">[Visuel]</div><span class="tag">École</span></div>
+<span class="title cond">Roguelike procédural</span>
+<span class="sub">Unity · Bakery</span>
+</a>
+<a class="card" href="projets/boids.html" data-tags="ecole">
+<div class="thumb"><!-- Remplace par : <img src="img/boids.jpg" alt="Boids" loading="lazy"> --><div class="ph">[Visuel]</div><span class="tag">École</span></div>
+<span class="title cond">Boids</span>
+<span class="sub">Unity URP</span>
+</a>
+<a class="card" href="projets/shader-fantome.html" data-tags="ecole">
+<div class="thumb"><!-- Remplace par : <img src="img/shader-fantome.jpg" alt="Shader fantôme" loading="lazy"> --><div class="ph">[Visuel]</div><span class="tag">École</span></div>
+<span class="title cond">Shader fantôme</span>
+<span class="sub">Amplify Shader Editor</span>
+</a>
+<a class="card" href="projets/god-rays.html" data-tags="ecole">
+<div class="thumb"><!-- Remplace par : <img src="img/god-rays.jpg" alt="God rays" loading="lazy"> --><div class="ph">[Visuel]</div><span class="tag">École</span></div>
+<span class="title cond">God rays</span>
+<span class="sub">VFX</span>
+</a>
+<a class="card" href="projets/cape.html" data-tags="ecole">
+<div class="thumb"><!-- Remplace par : <img src="img/cape.jpg" alt="Cape" loading="lazy"> --><div class="ph">[Visuel]</div><span class="tag">École</span></div>
+<span class="title cond">Cape</span>
+<span class="sub">Simulation de tissu</span>
+</a>
+</div>
+</section>
 
-    </head>
+<section id="experience" class="section split">
+<div class="side">
+<h2 class="h2 cond">Parcours</h2>
+<div class="row" role="group" aria-label="Type de parcours">
+<button class="pill" type="button" data-tab="pro" aria-pressed="true">Expérience</button>
+<button class="pill" type="button" data-tab="formation" aria-pressed="false">Formation</button>
+</div>
+</div>
+<div class="main">
+<div class="panel" id="pro">
+<div class="entry"><div class="logo-box">Logo</div><div><h3>Technical Artist (stage) — Dindon Studio</h3><p>Stage Technical Artist sur Unreal Engine 5. [Ce que tu y fais : outils, shaders, optimisation…]</p></div><span class="date">Sept. – nov. 2026</span></div>
+</div>
+<div class="panel" id="formation" hidden>
+<div class="entry"><div class="logo-box">Logo</div><div><h3>LISAA Bordeaux — Game Creation</h3><p>Spécialisation Technical Artist. Diplômé. [Projets marquants…]</p></div><span class="date">[années]</span></div>
+</div>
+</div>
+</section>
 
-    <body>
-        <header>
-            <h1>Théo Arnaud Manchado</h1>
-            <p>Tech Artist & Game Developper</p>
-            <a href="#projets">Voir mes projets</a>
-        </header>
-        <section id="about">
-            <h2>À propos de moi</h2>
-            <p>Je suis actuellement en creation de jeux vidéo a LISAA bordeaux, passionné par la technique et la technologie dans les jeux vidéo. Je souhaite me spécialisé dans les shaders, la création de fluide ainsi que la génération procédurale.</p>
-            <a href="mailto:theoarnaud55@gmail.com">Contactez-moi</a>
-        </section>
+<section id="about" class="section about">
+<!-- Remplace par : <img class="photo media" src="img/photo.jpg" alt="Theo Arnaud-Manchado"> -->
+<div class="photo ph">[Photo]</div>
+<div class="text">
+<h2 class="h2 cond">À propos</h2>
+<p class="lead">Salut, moi c'est Theo, <strong>Technical Artist</strong> diplômé de LISAA Bordeaux. Ce qui me motive : comprendre les systèmes de l'intérieur plutôt qu'utiliser des solutions toutes faites — simulations, outils procéduraux, shaders.</p>
+<p>Ouvert au jeu vidéo, à la simulation, à la production virtuelle et à l'XR, en France ou en remote.</p>
+<div class="row">
+<a class="btn fill" href="assets/CV-Theo-Arnaud-Manchado.pdf" download>Télécharger le CV ↓</a>
+<a class="btn" href="#contact">Me contacter</a>
+</div>
+<div class="block"><h3>Logiciels</h3><div class="softs">
+<div class="soft"><i aria-hidden="true"></i>Unreal Engine 5</div><div class="soft"><i aria-hidden="true"></i>Houdini</div><div class="soft"><i aria-hidden="true"></i>Substance Painter</div><div class="soft"><i aria-hidden="true"></i>Blender</div><div class="soft"><i aria-hidden="true"></i>Maya</div><div class="soft"><i aria-hidden="true"></i>3ds Max</div><div class="soft"><i aria-hidden="true"></i>Unity</div><div class="soft"><i aria-hidden="true"></i>Gaea</div><div class="soft"><i aria-hidden="true"></i>World Machine</div><div class="soft"><i aria-hidden="true"></i>RealityScan</div><div class="soft"><i aria-hidden="true"></i>Amplify</div><div class="soft"><i aria-hidden="true"></i>Niagara</div>
+</div></div>
+<div class="block" style="border-top:0;padding-top:0"><h3>Compétences</h3><div class="chips">
+<span class="chip">Simulation de fluides</span><span class="chip">FLIP / RBD</span><span class="chip">VAT / Alembic</span><span class="chip">Contenu procédural</span><span class="chip">PCG / GeometryScript</span><span class="chip">Shaders &amp; matériaux</span><span class="chip">HLSL</span><span class="chip">Post-process</span><span class="chip">Outils éditeur</span><span class="chip">Optimisation temps réel</span><span class="chip">VFX</span><span class="chip">Blueprint</span><span class="chip">C#</span><span class="chip">C++ (en apprentissage)</span>
+</div></div>
+</div>
+</section>
 
-        <footer>
-            <p>Mes réseaux :</p>
-            <a href="https://github.com/Vardkor"GitHub>GitHub</a> | <a href="https://www.linkedin.com/in/th%C3%A9o-arnaud-manchado-a7b567301/">LinkedIn</a>
-        </footer>
-
-        
-    </body>
-</htlm>
+<section id="contact" class="section contact on-ink">
+<div style="display:flex;flex-direction:column;gap:20px">
+<h2 class="h2 cond">Contact</h2>
+<p>Laisse-moi un message à <a class="mail" href="mailto:ton.email@exemple.fr">ton.email@exemple.fr</a></p>
+</div>
+<div class="foot">
+<nav aria-label="Réseaux">
+<a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn ↗</a>
+<a href="https://www.artstation.com" target="_blank" rel="noopener">ArtStation ↗</a>
+<a href="https://github.com" target="_blank" rel="noopener">GitHub ↗</a>
+</nav>
+<span>© 2026 Theo Arnaud-Manchado</span>
+</div>
+</section>
+</main>
+<script src="main.js"></script>
+</body>
+</html>

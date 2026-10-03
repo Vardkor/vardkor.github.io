@@ -1,1 +1,0 @@
-# vardkor.github.io
